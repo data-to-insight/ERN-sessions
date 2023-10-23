@@ -1,0 +1,7 @@
+This set of workshops introduces:
+Variables and basic data types (str, int, float), and how we need to consider that data types are acted on by the same operation differently
+Different ways of storing data/objects: lists, dictionaries, dataframes, and key methods associated with each
+Writing functions simply, with appropriate names, with docstrings, raising forseen errors
+Extending that to lambda functions and list comprehensions
+Basic pytest functionality
+Using documentation to work out how to do things

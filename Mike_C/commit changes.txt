@@ -1,0 +1,7 @@
+****************************************
+In GitHub Terminal type each line and CR
+****************************************
+git add .
+git status
+git commit -m "Worksheet 1 session n progress"
+git push origin HEAD

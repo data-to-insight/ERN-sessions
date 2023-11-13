@@ -5,3 +5,5 @@ git add .
 git status
 git commit -m "Worksheet 1 session n progress"
 git push origin HEAD
+
+Homework: w/c 13/11 = Assignment 2

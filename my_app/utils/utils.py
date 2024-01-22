@@ -1,4 +1,5 @@
 import pandas as pd 
+import json
 
 def read_data(filepath):
     df = pd.read_csv(filepath)
@@ -12,4 +13,5 @@ def number_of_children(df):
 
 def boys_girls_count(df):
     counts = df['SEX'].value_counts().to_json()
-    return counts
+    counts = json.loads(counts)
+    return counts['Male'], counts['Female']

@@ -27,6 +27,7 @@ def data_cleaner(df):
 
 
 # Plotting functions
+
 def age_bar(df):
     fig = px.histogram(df, 
                        x='SEX',

@@ -45,7 +45,7 @@ left_df = dfs['b1_children_in_need']
 # Get a list of the columns that are the same in every table.
 # This saves writing them out by hand and if they change with publication years
 # you can extract them regardless of spelling.
-permenant_columns = list(left_df.columns[:11])
+permenant_columns = list(left_df.columns[:10])
 
 # Let's also add the table name as a prefix to the columns to match the original
 # data and help merging later
@@ -54,6 +54,9 @@ left_df = left_df.set_axis([f'b1_children_in_need_{column}' if (not column in pe
 # print(left_df.columns)
 # sys.exit()
 # lets go through all the dfs we want and merge them into the mega table we want
+
+left_df = left_df.merge(dfs['b2_children_in_need_recorded_disability'], how='outer', on=permenant_columns)
+
 for key, df in dfs.items():
     if ('headline_figures' not in key) & (key[:1] != 'b1') & ('mid-year' not in key) & (key[0] != 'a'):
         # Add the table name prefix to each colum again (important to understand table
@@ -69,4 +72,4 @@ for key, df in dfs.items():
         # We'll see that this doesn't work yet because column names are repeated 
         # across tables, let's maybe get table names in each column
 
-print(left_df.columns)
+print(left_df)

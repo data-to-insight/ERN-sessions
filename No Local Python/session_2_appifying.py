@@ -6,6 +6,7 @@ own visualisations based on that.
 
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # Variables
 # It would make sense to define the dfs variable at this point OR inside the 'if' as we won't have any
@@ -72,26 +73,20 @@ def merge_cin_tables(cin_df_dict):
     return left_df
 
 def concat_cin_tables(cin_tables):
-    dfs_to_concat = []
-    for key, df in cin_tables.items():
-        if (
-            ("headline_figures" not in key)
-            & (key[:1] != "b1")
-            & ("mid-year" not in key)
-            & (key[0] != "a")
-        ):
-            dfs_to_concat.append(df)
+    dfs_to_concat = [df for key, df in cin_tables.items() if ("headline_figures" not in key) & (key[:1] != "b1") & ("mid-year" not in key) & (key[0] != "a")]
 
     df = pd.concat(dfs_to_concat, axis=0)
-    st.write('got here')
-    st.dataframe(df)
-    # for df in cin_tables.values()[1:]:
+    
+    return df
 
 def convert_df(df):
     return df.to_csv().encode("utf-8")
 
-def make_chart(df):
-    st.dataframe(df)
+def make_chart(df, selected_measure):
+    df['time_period'] = pd.to_datetime(df['time_period'], format='%Y')
+    fig = px.bar(df, x='time_period', y=selected_measure, color='la_name', barmode='group')
+    st.plotly_chart(fig)
+
 
 # App code
 st.title("Benchmarking data pipeline")
@@ -103,43 +98,38 @@ if files:
     # easier to update later, and easier to debug.
     dfs = ingest_cin_data(files)
 
-    # cin_table_merged = merge_cin_tables(dfs)
+    cin_table_merged = merge_cin_tables(dfs)
     cin_tables_concat = concat_cin_tables(dfs)
 
-    # csv_merged = convert_df(cin_table_merged)
-    # csv_concat = convert_df(cin_tables_concat)
+    csv_merged = convert_df(cin_table_merged)
+    csv_concat = convert_df(cin_tables_concat)
 
-    # st.download_button(
-    #     "Click to download wide-form data",
-    #     csv_merged,
-    #     file_name="benchmarking.csv",
-    #     mime="text/csv",
-    # )
+    st.download_button(
+        "Click to download wide-form data",
+        csv_merged,
+        file_name="benchmarking.csv",
+        mime="text/csv",
+    )
 
-    # st.download_button(
-    #     "Click to download long form data",
-    #     csv_concat,
-    #     file_name="benchmarking.csv",
-    #     mime="text/csv",
-    # )
+    st.download_button(
+        "Click to download long form data",
+        csv_concat,
+        file_name="benchmarking.csv",
+        mime="text/csv",
+    )
 
-    # la_selection = st.sidebar.multiselect(label='Select LAs',
-    #                        options=cin_tables_concat['la_name'].unique())
+    la_selection = st.sidebar.multiselect(label='Select LAs',
+                           options=cin_tables_concat['la_name'].unique())
     
-    # category_select = st.sidebar.selectbox(label='Select category',
-    #                                        options=cin_tables_concat['category'].unique(),
-    #                                        )
+    category_select = st.sidebar.selectbox(label='Select category',
+                                           options=cin_tables_concat['category'].unique(),
+                                           )
+
+    vis_df = cin_tables_concat[(cin_tables_concat['category'] == category_select
+                                ) & (cin_tables_concat['la_name'].isin(la_selection))]
+
+
+    measure_select = st.sidebar.selectbox(label='Select measure (this may take time to refresh after choosing category)',
+                                        options=vis_df.dropna(how='all', axis=1).columns[11:])
     
-    # category_type = st.sidebar.selectbox(label='Select category type',
-    #                                      options=cin_tables_concat['category_type'][cin_tables_concat['category'] == category_select].unique())
-
-    # vis_df = cin_tables_concat[(cin_tables_concat['category'] == category_select
-    #                             ) & (cin_tables_concat['category_type'] == category_select
-    #                             ) & (cin_tables_concat['la_name'].isin(la_selection))]
-
-    # #vis_df.dropna(how='all', axis=1, inplace=True)
-
-    # measure_select = st.sidebar.selectbox(label='Select measure (this may take time to refresh after choosing category)',
-    #                                     options=vis_df.dropna(how='all', axis=1).columns[11:])
-    
-    # make_chart(vis_df[['la_name', 'time_period', 'category', measure_select]])
+    make_chart(vis_df[['la_name', 'time_period', 'category', measure_select]], measure_select)

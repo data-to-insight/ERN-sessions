@@ -1,0 +1,113 @@
+﻿time_period,time_identifier,geographic_level,country_code,country_name,characteristic,characteristic_type,CPP_At31,Neglect_Initial,Physical_Abuse_Initial,Sexual_Abuse_Initial,Emotional_Abuse_Initial,Multiple_Initial
+2024,Reporting year,National,E92000001,England,Gender,Total,49900,25350,3430,1760,18430,930
+2024,Reporting year,National,E92000001,England,Gender,Female,23550,11640,1480,1010,8990,430
+2024,Reporting year,National,E92000001,England,Gender,Male,25010,12810,1860,710,9150,480
+2024,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,70,30,10,c,30,0
+2024,Reporting year,National,E92000001,England,Age,Unborn,1270,870,80,40,270,20
+2024,Reporting year,National,E92000001,England,Age,Under 1,4010,2240,350,140,1230,50
+2024,Reporting year,National,E92000001,England,Age,1-4 years,11100,5690,750,290,4180,190
+2024,Reporting year,National,E92000001,England,Age,5-9 years,14080,6880,870,460,5610,260
+2024,Reporting year,National,E92000001,England,Age,10-15 years,16630,8280,1110,710,6180,350
+2024,Reporting year,National,E92000001,England,Age,16 & over,2810,1400,270,130,960,50
+2024,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,48490,24530,3320,1720,18010,910
+2024,Reporting year,National,E92000001,England,Ethnicity,White,36370,19600,1960,1370,12800,650
+2024,Reporting year,National,E92000001,England,Ethnicity,Mixed,4870,2240,300,120,2070,140
+2024,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3480,1140,440,110,1720,70
+2024,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2800,1160,490,90,1010,50
+2024,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,970,390,130,40,410,10
+2023,Reporting year,National,E92000001,England,Gender,Total,50780,25050,3630,1890,19000,1210
+2023,Reporting year,National,E92000001,England,Gender,Female,23840,11400,1550,1070,9280,540
+2023,Reporting year,National,E92000001,England,Gender,Male,25540,12710,1970,790,9430,650
+2023,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,90,50,c,c,40,0
+2023,Reporting year,National,E92000001,England,Age,Unborn,1310,900,120,20,260,20
+2023,Reporting year,National,E92000001,England,Age,Under 1,4170,2320,390,140,1230,100
+2023,Reporting year,National,E92000001,England,Age,1-4 years,11380,5640,790,330,4380,250
+2023,Reporting year,National,E92000001,England,Age,5-9 years,14120,6660,890,490,5710,360
+2023,Reporting year,National,E92000001,England,Age,10-15 years,16940,8180,1170,740,6440,410
+2023,Reporting year,National,E92000001,England,Age,16 & over,2860,1360,270,170,990,80
+2023,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,49320,24220,3520,1840,18550,1190
+2023,Reporting year,National,E92000001,England,Ethnicity,White,37010,19290,2170,1460,13180,900
+2023,Reporting year,National,E92000001,England,Ethnicity,Mixed,5150,2280,410,140,2170,140
+2023,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3570,1120,420,150,1810,80
+2023,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2780,1190,430,60,1040,60
+2023,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,830,340,100,40,350,10
+2022,Reporting year,National,E92000001,England,Gender,Total,50920,24430,3780,1930,19480,1280
+2022,Reporting year,National,E92000001,England,Gender,Female,24090,11150,1670,1090,9560,630
+2022,Reporting year,National,E92000001,England,Gender,Male,25380,12330,2000,810,9610,620
+2022,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,130,60,10,c,50,c
+2022,Reporting year,National,E92000001,England,Age,Unborn,1330,890,110,20,280,30
+2022,Reporting year,National,E92000001,England,Age,Under 1,4440,2480,420,130,1330,90
+2022,Reporting year,National,E92000001,England,Age,1-4 years,12080,5760,930,340,4770,280
+2022,Reporting year,National,E92000001,England,Age,5-9 years,14200,6580,950,530,5760,370
+2022,Reporting year,National,E92000001,England,Age,10-15 years,16120,7380,1130,770,6420,430
+2022,Reporting year,National,E92000001,England,Age,16 & over,2750,1330,250,150,940,80
+2022,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,49220,23560,3650,1870,18900,1240
+2022,Reporting year,National,E92000001,England,Ethnicity,White,37060,18760,2280,1500,13590,930
+2022,Reporting year,National,E92000001,England,Ethnicity,Mixed,4940,2210,370,100,2160,100
+2022,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3690,1210,480,150,1740,100
+2022,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2630,1050,410,80,1010,80
+2022,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,900,320,110,40,400,30
+2021,Reporting year,National,E92000001,England,Gender,Total,50010,24120,3650,1930,18840,1480
+2021,Reporting year,National,E92000001,England,Gender,Female,23490,10890,1540,1120,9270,680
+2021,Reporting year,National,E92000001,England,Gender,Male,25010,12220,1970,780,9280,770
+2021,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,80,50,10,c,20,c
+2021,Reporting year,National,E92000001,England,Age,Unborn,1430,960,140,30,270,30
+2021,Reporting year,National,E92000001,England,Age,Under 1,4270,2310,430,130,1300,100
+2021,Reporting year,National,E92000001,England,Age,1-4 years,12360,5970,980,350,4690,380
+2021,Reporting year,National,E92000001,England,Age,5-9 years,14080,6630,880,520,5640,420
+2021,Reporting year,National,E92000001,England,Age,10-15 years,15210,7000,960,750,6020,480
+2021,Reporting year,National,E92000001,England,Age,16 & over,2660,1240,270,150,920,80
+2021,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,48200,23120,3510,1860,18300,1400
+2021,Reporting year,National,E92000001,England,Ethnicity,White,36150,18260,2260,1450,13120,1060
+2021,Reporting year,National,E92000001,England,Ethnicity,Mixed,4880,2210,350,130,2060,130
+2021,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3580,1160,420,160,1760,90
+2021,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2670,1130,380,90,1000,80
+2021,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,920,370,100,40,370,40
+2020,Reporting year,National,E92000001,England,Gender,Total,51510,26010,3820,1970,18380,1330
+2020,Reporting year,National,E92000001,England,Gender,Female,24480,12080,1670,1170,8950,610
+2020,Reporting year,National,E92000001,England,Gender,Male,25740,13050,2050,770,9170,690
+2020,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,70,40,10,c,20,c
+2020,Reporting year,National,E92000001,England,Age,Unborn,1220,850,90,20,240,20
+2020,Reporting year,National,E92000001,England,Age,Under 1,4670,2700,470,130,1280,90
+2020,Reporting year,National,E92000001,England,Age,1-4 years,12720,6560,980,330,4580,280
+2020,Reporting year,National,E92000001,England,Age,5-9 years,14700,7090,1040,510,5660,410
+2020,Reporting year,National,E92000001,England,Age,10-15 years,15780,7650,1020,800,5840,470
+2020,Reporting year,National,E92000001,England,Age,16 & over,2420,1170,230,180,770,70
+2020,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,49640,25000,3680,1900,17770,1290
+2020,Reporting year,National,E92000001,England,Ethnicity,White,37830,20220,2390,1470,12740,1010
+2020,Reporting year,National,E92000001,England,Ethnicity,Mixed,4790,2210,380,130,1960,110
+2020,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3530,1140,390,170,1750,70
+2020,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2570,1060,410,80,960,70
+2020,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,920,370,110,40,370,30
+2019,Reporting year,National,E92000001,England,Gender,Total,52260,25330,4170,2230,18460,2070
+2019,Reporting year,National,E92000001,England,Gender,Female,24500,11490,1800,1360,8870,980
+2019,Reporting year,National,E92000001,England,Gender,Male,26480,12970,2240,850,9360,1060
+2019,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,70,40,10,c,10,c
+2019,Reporting year,National,E92000001,England,Age,Unborn,1210,820,110,20,230,30
+2019,Reporting year,National,E92000001,England,Age,Under 1,4820,2630,580,140,1350,120
+2019,Reporting year,National,E92000001,England,Age,1-4 years,13130,6420,1090,390,4760,460
+2019,Reporting year,National,E92000001,England,Age,5-9 years,15180,7050,1090,580,5850,610
+2019,Reporting year,National,E92000001,England,Age,10-15 years,15580,7320,1080,890,5580,720
+2019,Reporting year,National,E92000001,England,Age,16 & over,2340,1090,220,210,700,130
+2019,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,50620,24410,4010,2180,18000,2020
+2019,Reporting year,National,E92000001,England,Ethnicity,White,38980,19910,2660,1780,13140,1480
+2019,Reporting year,National,E92000001,England,Ethnicity,Mixed,4780,2160,370,130,1920,200
+2019,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3400,940,440,150,1700,180
+2019,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2540,1060,430,80,860,130
+2019,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,910,330,120,50,380,40
+2018,Reporting year,National,E92000001,England,Gender,Total,53790,25820,4120,2180,18860,2820
+2018,Reporting year,National,E92000001,England,Gender,Female,25410,11710,1900,1330,9130,1330
+2018,Reporting year,National,E92000001,England,Gender,Male,27160,13290,2110,810,9500,1440
+2018,Reporting year,National,E92000001,England,Gender,Unknown or Indeterminate gender,70,30,10,c,20,c
+2018,Reporting year,National,E92000001,England,Age,Unborn,1150,780,100,30,200,40
+2018,Reporting year,National,E92000001,England,Age,Under 1,5000,2710,510,150,1410,210
+2018,Reporting year,National,E92000001,England,Age,1-4 years,13750,6740,1110,370,4910,620
+2018,Reporting year,National,E92000001,England,Age,5-9 years,15860,7260,1120,570,6020,890
+2018,Reporting year,National,E92000001,England,Age,10-15 years,15810,7320,1100,840,5640,910
+2018,Reporting year,National,E92000001,England,Age,16 & over,2220,1010,170,210,680,150
+2018,Reporting year,National,E92000001,England,Ethnicity,Known ethnicity,51880,24720,3960,2110,18350,2740
+2018,Reporting year,National,E92000001,England,Ethnicity,White,39910,20100,2570,1700,13430,2100
+2018,Reporting year,National,E92000001,England,Ethnicity,Mixed,4830,2100,410,140,1940,240
+2018,Reporting year,National,E92000001,England,Ethnicity,Asian or Asian British,3410,990,450,110,1650,200
+2018,Reporting year,National,E92000001,England,Ethnicity,Black or Black British,2950,1210,400,120,1030,180
+2018,Reporting year,National,E92000001,England,Ethnicity,Other ethnic group,790,320,120,30,290,30

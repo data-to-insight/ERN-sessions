@@ -1,0 +1,141 @@
+﻿time_period,time_identifier,geographic_level,country_code,country_name,category,characteristic,CIN_At31,N1_Abuse_or_neglect,N2_Childs_disability_or_illness,N3_Parents_disability_or_illness,N4_Family_in_acute_stress,N5_Family_dysfunction,N6_Socially_unacceptable_behaviour,N7_Low_income,N8_Absent_parenting,N9_Cases_other_than_CIN,N0_Not_stated
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Total,399460,231940,32150,8270,34410,47900,7870,1070,21930,3510,10430
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Female,173480,109660,10690,3900,15470,22200,2460,480,2630,1520,4460
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Male,218230,116930,21390,4100,18340,24550,5360,570,19270,1960,5760
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,990,550,50,30,130,150,10,10,10,10,40
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,6780,4800,20,240,470,1000,30,10,20,10,170
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,16120,11630,100,510,1250,2010,80,80,60,50,350
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,56130,40400,1420,1330,4040,6680,370,190,200,280,1220
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,85030,54910,8110,1800,6370,9930,850,180,330,670,1900
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,128590,74710,14730,2660,11550,15680,3040,210,1590,1060,3370
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,106780,45470,7770,1720,10720,12600,3500,410,19740,1440,3410
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,7710,5550,50,240,600,990,40,40,30,20,170
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,26700,19300,580,650,1930,3190,180,80,90,130,570
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,38420,25750,2600,850,2880,4550,390,90,150,280,890
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,59560,36950,4830,1330,5420,7510,1020,100,440,480,1480
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,41090,22120,2640,830,4640,5970,830,170,1920,610,1360
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,8200,5980,50,260,620,990,40,40,30,30,170
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,29320,21030,840,690,2100,3460,190,100,110,150,650
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,46540,29120,5500,950,3480,5370,460,90,180,390,1000
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,68830,37630,9880,1330,6110,8150,2010,110,1140,570,1890
+2024,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,65340,23160,5110,880,6030,6580,2670,240,17810,830,2050
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Total,403090,231500,32790,8540,35540,51160,8040,1190,20970,3520,9830
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Female,176030,109750,10780,4040,16030,23750,2560,530,2670,1580,4330
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Male,218950,116360,21910,4250,18810,26170,5440,650,18260,1920,5190
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,1080,570,50,30,150,150,10,c,30,10,90
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,7020,4820,50,230,550,1100,30,10,20,10,220
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,16810,11930,140,490,1250,2290,70,80,50,50,480
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,58700,41260,1570,1500,4280,7390,440,270,240,330,1430
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,85880,54820,8050,1830,6450,10700,860,220,370,640,1950
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,131150,74800,15260,2730,12330,16810,3170,220,1690,1140,3000
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,103440,43830,7740,1760,10670,12880,3480,400,18600,1360,2730
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,8060,5760,60,230,600,1080,30,30,20,20,230
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,27700,19550,610,720,2060,3500,210,110,110,150,680
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,38980,25840,2570,900,2890,4930,380,110,170,290,900
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,60890,37090,4940,1350,5810,8180,1100,100,440,510,1380
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,40390,21510,2600,850,4660,6070,840,180,1920,620,1140
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,8540,6030,80,250,630,1180,40,50,30,30,230
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,30890,21660,950,780,2200,3870,230,160,130,180,730
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,46830,28950,5470,940,3550,5760,470,110,200,350,1040
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,69990,37570,10300,1380,6480,8610,2070,120,1240,620,1610
+2023,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,62700,22150,5120,900,5960,6750,2640,220,16660,740,1580
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Total,404310,230830,32160,8930,34740,53600,8200,1340,18410,3680,12420
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Female,178980,109920,10820,4170,16000,24940,2710,590,2740,1600,5500
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Male,216930,115460,21250,4500,18090,27340,5440,720,15630,2050,6450
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,1100,560,40,40,140,140,10,10,20,10,120
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,7300,4900,40,220,520,1180,40,10,30,10,350
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,17820,12470,140,630,1240,2350,90,100,70,40,700
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,61890,42860,1640,1600,4400,8220,480,280,260,380,1800
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,87280,54940,7670,1990,6420,11420,880,260,400,740,2560
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,130910,73840,14870,2750,12030,17280,3240,270,1550,1180,3910
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,99060,41800,7820,1750,10120,13150,3480,430,16100,1320,3090
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,8460,5940,60,290,610,1130,30,40,30,20,310
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,29350,20410,670,760,2120,3890,220,130,130,170,860
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,39900,25920,2540,930,2920,5370,370,120,190,320,1220
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,61110,36720,4910,1330,5790,8260,1160,120,470,540,1810
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,40160,20930,2650,860,4560,6290,920,190,1910,560,1300
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,9110,6390,70,330,620,1180,50,50,40,30,360
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,32390,22380,970,830,2270,4290,260,150,130,210,920
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,47300,28990,5120,1060,3490,6040,500,140,210,420,1330
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,69550,36970,9940,1410,6210,9000,2080,150,1080,630,2080
+2022,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,58590,20730,5150,880,5510,6820,2550,240,14180,760,1770
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Total,388490,219190,32140,9460,33120,53500,7730,1600,16410,4180,11160
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Female,171930,104160,10700,4420,15020,24760,2510,740,2730,1830,5050
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Male,208260,109520,21370,4720,17500,27510,5170,850,13660,2320,5660
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,810,420,30,40,100,120,20,10,10,10,50
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,7490,5100,40,290,490,1100,40,20,10,20,390
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,17010,11870,120,660,1220,2260,90,90,80,60,570
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,62060,42530,1670,1780,4360,8580,460,330,210,430,1720
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,84910,52310,7650,2200,6310,11670,870,360,410,880,2250
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,122070,67780,14620,2800,10900,16790,2740,320,1360,1410,3360
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,94930,39580,8050,1740,9830,13100,3530,500,14350,1390,2880
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,8140,5750,60,320,550,1050,40,50,40,30,260
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,29420,20270,700,850,2030,4070,210,150,100,180,850
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,38870,24800,2500,1030,2880,5470,410,170,190,370,1070
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,56400,33360,4730,1350,5180,7910,970,150,480,660,1610
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,39100,19970,2720,870,4390,6270,870,220,1920,600,1260
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,8630,5980,60,320,650,1170,40,40,40,30,300
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,32500,22190,970,920,2310,4490,240,180,100,250,860
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,45970,27480,5150,1170,3430,6200,460,180,220,510,1170
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,65500,34340,9880,1450,5700,8850,1760,170,870,750,1740
+2021,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,55660,19530,5310,860,5400,6810,2660,270,12420,780,1600
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Total,389260,217440,31940,9420,32860,54810,8180,1540,15950,4110,13010
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Female,172030,102680,10690,4350,14900,25490,2830,700,2830,1760,5810
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Male,209430,109650,21200,4740,17430,28160,5290,810,13090,2310,6750
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,930,500,30,50,80,120,10,10,10,20,110
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,6860,4610,20,290,450,1050,50,20,20,20,350
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,18460,12730,120,740,1230,2510,130,80,100,70,730
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,63000,42450,1730,1740,4400,8950,590,290,290,500,2070
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,86620,52830,7730,2230,6360,12260,1000,320,440,920,2540
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,124100,67910,14290,2790,11310,17520,3040,320,1630,1530,3760
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,90190,36900,8040,1620,9110,12530,3370,510,13480,1070,3550
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,8820,6080,60,370,590,1190,70,40,50,40,330
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,29850,20200,760,790,2060,4310,270,140,140,230,970
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,39300,24730,2500,1030,2910,5720,470,160,200,380,1200
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,56830,33080,4640,1350,5210,8260,1140,140,560,690,1760
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,37220,18590,2730,800,4120,6020,890,220,1890,420,1550
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,9380,6510,60,350,630,1270,60,40,60,30,370
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,32960,22140,970,940,2310,4620,320,150,150,270,1090
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,47190,28030,5230,1200,3430,6520,530,150,240,530,1330
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,67060,34720,9650,1430,6080,9240,1900,170,1060,840,1970
+2020,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,52840,18250,5300,820,4980,6500,2480,290,11580,650,1990
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Total,399510,216290,33590,9880,33750,58820,8230,1490,15110,3720,17030
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Female,178440,103020,11150,4630,15410,27600,2940,720,3040,1650,7590
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Male,212980,108320,22400,4950,17830,29910,5230,760,12020,2030,8660
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,720,360,20,30,60,90,10,0,10,10,130
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,7360,4590,30,270,460,1220,50,20,30,40,640
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,19480,12760,190,710,1310,2800,110,90,130,110,1210
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,67490,43470,1950,1920,4560,10270,600,300,450,480,3260
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,93070,54310,8450,2390,7010,13840,1160,360,620,950,3600
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,127330,67320,15050,3010,11630,18470,3120,350,1930,1250,4650
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,84730,33810,7920,1590,8780,12210,3190,380,11960,900,3650
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,9280,6120,100,320,660,1330,40,50,50,50,530
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,32060,20750,830,910,2140,4930,290,150,220,200,1540
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,42540,25640,2670,1130,3240,6610,520,180,290,440,1660
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,58650,33120,4790,1470,5350,8830,1220,180,690,590,2160
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,35900,17400,2770,820,4020,5900,870,160,1790,380,1690
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,9920,6490,90,380,620,1430,60,30,70,60,640
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,35290,22650,1130,1010,2410,5330,310,150,220,280,1700
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,50430,28620,5780,1260,3770,7230,640,180,340,510,1920
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,68580,34160,10250,1530,6280,9630,1900,170,1230,660,2460
+2019,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,48760,16390,5150,770,4750,6300,2320,220,10170,520,1950
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Total,404710,215270,35230,10490,34280,62190,8220,1420,12720,3890,20980
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Female,182000,103040,11860,4850,15620,29020,3100,670,2530,1740,9560
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Male,214470,107480,23320,5290,18170,31840,5060,730,10160,2090,10330
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Unknown or Indeterminate gender,970,430,20,30,80,100,10,10,10,10,270
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Unborn,7280,4330,30,320,410,1230,50,20,20,50,830
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged Under 1 year,20580,13040,180,820,1320,3180,150,70,100,100,1610
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 1 to 4 years,70830,43960,2270,2010,5000,11460,750,320,310,530,4240
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 5 to 9 years,97510,55860,8800,2570,7550,14960,1230,390,460,990,4700
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 10 to 15 years,128000,66260,15620,3160,11510,19170,3050,320,1680,1340,5890
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Total Aged 16 years and over,80380,31790,8340,1610,8480,12190,2990,320,10160,880,3630
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged Under 1 year,9760,6220,90,350,590,1570,80,40,50,40,740
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 1 to 4 years,33690,20960,920,930,2330,5520,370,150,140,260,2100
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 5 to 9 years,44420,26300,2870,1200,3470,7020,540,190,220,430,2180
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 10 to 15 years,58880,32750,5060,1560,5220,8970,1190,160,540,610,2840
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Female Aged 16 years and over,35240,16810,2920,810,4010,5950,930,130,1580,400,1700
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged Under 1 year,10440,6630,80,450,690,1580,70,30,50,60,790
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 1 to 4 years,36940,22910,1340,1070,2640,5920,380,160,160,270,2080
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 5 to 9 years,52990,29520,5920,1370,4080,7930,680,190,240,550,2510
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 10 to 15 years,69010,33460,10560,1600,6290,10180,1870,160,1140,730,3030
+2018,Reporting year,National,E92000001,England,Primary need at assessment,Male Aged 16 years and over,45080,14950,5420,800,4460,6230,2060,190,8570,480,1920

@@ -12,6 +12,7 @@ files = st.file_uploader(label='Please upload CIN data',
 dfs = {}
 
 if files:
+    # read in the files
     for f in files:
         df = pd.read_csv(f)
 
@@ -19,6 +20,7 @@ if files:
 
         dfs[key_string] = df
 
+    # data processing 
     dfs = {key:dfs[key] for key in sorted(dfs.keys())}
 
     left_df = dfs['b1_children_in_need']
@@ -39,6 +41,7 @@ if files:
 
     wide_csv = convert_df(left_df)
 
+    # app interactivity
     st.download_button(label='Click to download wide merged data',
                        data=wide_csv,
                        file_name='wide_benchamrking.csv',

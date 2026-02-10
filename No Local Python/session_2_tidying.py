@@ -42,11 +42,11 @@ def ingest_cin_data(input_files):
 
 
 def merge_cin_tables(cin_df_dict):
-    '''
+    """
     Takes the dict of CIN tables, determines columns shared between
-    tables, then left merges all tables to get all data in a row for 
+    tables, then left merges all tables to get all data in a row for
     la and time period.
-    '''
+    """
     left_df = cin_df_dict["b1_children_in_need"]
     permenant_columns = list(left_df.columns[:10])
     left_df = left_df.set_axis(

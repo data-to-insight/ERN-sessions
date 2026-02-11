@@ -4,6 +4,7 @@
 
 from enum import Enum
 
+
 class EthnicSubcategories(Enum):
     WBRI = "White"
     WIRI = "White"
@@ -26,20 +27,21 @@ class EthnicSubcategories(Enum):
     REFU = "Refused"
     NOBT = "Not Obtained"
 
+
 class DateCols903(Enum):
     cols = [
-        'DOB',
-        'DATE_INT',
-        'DATE_MATCH',
-        'DECOM',
-        'DEC',
-        'MC_DOB',
-        'MOTHER',
-        'MIS_START',
-        'MIS_END',
-        'DATE_PLACED',
-        'DATE_PLACED_CEASED',
-        'DATE_PERM',
-        'REVIEW',
-        'DUC'
+        "DOB",
+        "DATE_INT",
+        "DATE_MATCH",
+        "DECOM",
+        "DEC",
+        "MC_DOB",
+        "MOTHER",
+        "MIS_START",
+        "MIS_END",
+        "DATE_PLACED",
+        "DATE_PLACED_CEASED",
+        "DATE_PERM",
+        "REVIEW",
+        "DUC",
     ]

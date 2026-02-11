@@ -37,7 +37,9 @@ for table in table_names:
     dfs[table] = pd.DataFrame(result)
 
 # Some national data for comparisons
-national_characteristics = pd.read_excel('/workspaces/ERN-sessions/intermediate_python/national_cla_on_31_march_by_characteristics.xlsx')
+national_characteristics = pd.read_excel(
+    "/workspaces/ERN-sessions/intermediate_python/national_cla_on_31_march_by_characteristics.xlsx"
+)
 
 ################## END OF SESSION 1 ################
 
@@ -51,6 +53,6 @@ national_characteristics = pd.read_excel('/workspaces/ERN-sessions/intermediate_
 for key, df in dfs.items():
     dfs[key] = clean_903_table(df, collection_end=collection_end)
 
-print(dfs['header'])
+print(dfs["header"])
 
 ########### END OF SESSION 2 ###########

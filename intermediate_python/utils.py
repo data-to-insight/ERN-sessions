@@ -90,3 +90,98 @@ def time_difference(start_col, end_col, business_days=False):
         time_diff = time_diff / pd.Timedelta(days=1)
 
     return time_diff.astype("int")
+
+
+############## END OF SESSION 3
+
+
+def multiples_same_event(df, event_name, multiples_column=False):
+    if multiples_column == False:
+        multiples = (
+            df.groupby(["CHILD"]).size().to_frame("Number of events").reset_index()
+        )
+
+    else:
+        multiples = (
+            df.groupby([multiples_column])
+            .size()
+            .to_frame("Number of events")
+            .reset_index()
+        )
+
+    multiples = (
+        multiples.groupby(["Number of events"])
+        .size()
+        .to_frame("Children with number of events")
+        .reset_index()
+    )
+
+    multiples["Event type"] = event_name
+
+    multiples = multiples[
+        ["Event type", "Number of events", "Children with number of events"]
+    ]
+    return multiples
+
+
+def group_calculation_year(df, year_col, col_to_group, measure_name):
+    grouped = df.groupby([year_col, col_to_group]).size()
+    grouped = grouped.to_frame("Count").reset_index()
+    grouped = grouped.rename(columns={col_to_group: "Value"})
+
+    grouped["Percentage by year"] = grouped.apply(
+        lambda x: x["Count"]
+        / grouped.loc[grouped[year_col] == x[year_col]].Count.sum()
+        * 100,
+        axis=1,
+    )
+    # grouped["Percentage by year"] = (grouped["Count"] / grouped["Count"].sum()) * 100
+
+    grouped["Measure"] = measure_name
+
+    grouped_ordered = grouped[
+        [year_col, "Measure", "Value", "Count", "Percentage by year"]
+    ]
+
+    return grouped_ordered
+
+
+def percent_of_col_with_value(df, col, measure_name):
+    """
+    Percentage for yes out of all possible values. If needed for
+    just yes/no excluding other, filter before use.
+    """
+
+    df[col] = df[col].fillna("No")
+
+    grouped = group_calculation(df, "on_both", measure_name)
+
+    return grouped
+
+
+def appears_on_both(df1, df2, measure_name):
+    """
+    Finds unique values in two dataframes and inner merges to find children who are in
+    both. Then merges back to the dataframe of interest adding a column highlighting
+    whether children appear on both. Returns a dict of percentages.
+    """
+    df1_unique = df1.drop_duplicates(subset=["CHILD"]).copy()
+    df2_unique = df2.drop_duplicates(subset=["CHILD"]).copy()
+
+    merged_df = df1_unique.merge(df2_unique, how="inner", on=["CHILD"])
+
+    merged_df["on_both"] = "Yes"
+
+    df = (
+        df1_unique[["CHILD"]]
+        .merge(merged_df[["CHILD", "on_both"]], how="left", on=["CHILD"])
+        .copy()
+    )
+
+    df["on_both"].fillna("No", inplace=True)
+
+    # let's write a function to do this, we can sue this elsewhere too, for instance
+    # if finding percentage of referrals NFA with other returns
+    output = percent_of_col_with_value(df, "on_both", measure_name)
+
+    return output

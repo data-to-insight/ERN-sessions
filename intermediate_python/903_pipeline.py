@@ -195,7 +195,9 @@ measures["Placements by year"] = group_calculation_year(
 
 # For the last bit of the session lets look to see how many children from the total
 # appear on multiple tables. This is used a few times in the CHAT, for isntance.
-appears_multiple = appears_on_both(dfs["episodes"], dfs["missing"], 'CYP with episodes who have been missing')
+appears_multiple = appears_on_both(
+    dfs["episodes"], dfs["missing"], "CYP with episodes who have been missing"
+)
 print(appears_multiple)
 
 
@@ -203,6 +205,13 @@ print(appears_multiple)
 
 
 ########### SESSION 5 ############
-'''
-This session looks at writing tests
-'''
+"""
+This session looks at writing tests and exporting to excel
+"""
+
+################ END OF SESSION 5 ############
+
+############### SESSION 6 #############
+"""
+This session we will look at some dashboarding using streamlit
+"""

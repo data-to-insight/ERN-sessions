@@ -4,7 +4,6 @@
 import pandas as pd
 from config_903 import EthnicSubcategories, DateCols903
 from dateutil.relativedelta import relativedelta
-from datetime import datetime
 
 # Import in session 2
 import numpy as np
@@ -15,18 +14,26 @@ def format_dates(column):
     # The 903 has set date formats so we technically don't need to do this,
     # also pd.to_datetime is intelligent and can work out date formats pretty well,
     # so it's also unnecessary, but it's good to be introduced to the idea of tye/except blocks
+
+    # replaces empty strings that may appear with actual empty cells
+    column.replace(r"^\s*$", pd.NaT, regex=True)
+    column = column.fillna(pd.NaT)
     try:
-        column = pd.to_datetime(column, format="%d/%m/%Y", errors="coerce")
+        column = pd.to_datetime(column, format="%d/%m/%Y")
+        # We can check that it handles empty cells by using below, just whilst building
+        # but don't include this in actual code
+        # print(column[column.isna()])
         return column
     except:
-        column = pd.to_datetime(column, format="%Y/%m/%d", errors="coerce")
-        return column
+        raise ValueError(
+            f"Unknown date format in {column.name}, expected dd/mm/YYYY or YYYY/mm/dd, please check column"
+        )
 
 
 def calculate_age_buckets(age):
     # Used to make age buckets matching published data
     if age < 1:
-        return "a ) Under 1 year"
+        return "a) Under 1 year"
     elif age < 5:
         return "b) 1 to 4 years"
     elif age < 10:
@@ -40,6 +47,7 @@ def calculate_age_buckets(age):
 
 
 def clean_903_table(df: pd.DataFrame, collection_end: pd.Timestamp):
+    df = df.copy()
     clean_df = df.copy()
 
     if "index" in df.columns:
@@ -66,6 +74,7 @@ def clean_903_table(df: pd.DataFrame, collection_end: pd.Timestamp):
 
 ########### END OF SESSION 2 ###################
 def group_calculation(df, col_to_group, measure_name):
+    df = df.copy()
     grouped = df.groupby([col_to_group]).size()
     grouped = grouped.to_frame("Count").reset_index()
     grouped = grouped.rename(columns={col_to_group: "Value"})
@@ -96,6 +105,7 @@ def time_difference(start_col, end_col, business_days=False):
 
 
 def multiples_same_event(df, event_name, multiples_column=False):
+    df = df.copy()
     if multiples_column == False:
         multiples = (
             df.groupby(["CHILD"]).size().to_frame("Number of events").reset_index()
@@ -125,6 +135,7 @@ def multiples_same_event(df, event_name, multiples_column=False):
 
 
 def group_calculation_year(df, year_col, col_to_group, measure_name):
+    df = df.copy()
     grouped = df.groupby([year_col, col_to_group]).size()
     grouped = grouped.to_frame("Count").reset_index()
     grouped = grouped.rename(columns={col_to_group: "Value"})
@@ -151,7 +162,7 @@ def percent_of_col_with_value(df, col, measure_name):
     Percentage for yes out of all possible values. If needed for
     just yes/no excluding other, filter before use.
     """
-
+    df = df.copy()
     df[col] = df[col].fillna("No")
 
     grouped = group_calculation(df, "on_both", measure_name)
@@ -178,7 +189,9 @@ def appears_on_both(df1, df2, measure_name):
         .copy()
     )
 
-    df["on_both"].fillna("No", inplace=True)
+    # The below method is better than df['on_both'].fillna("no", inplace=True)
+    # as it avoids a chained assignment error
+    df.fillna({"on_both": "No"}, inplace=True)
 
     # let's write a function to do this, we can sue this elsewhere too, for instance
     # if finding percentage of referrals NFA with other returns

@@ -36,7 +36,6 @@ class DateCols903(Enum):
         "DECOM",
         "DEC",
         "MC_DOB",
-        "MOTHER",
         "MIS_START",
         "MIS_END",
         "DATE_PLACED",

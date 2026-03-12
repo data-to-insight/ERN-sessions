@@ -8,8 +8,9 @@ from sqlalchemy import (
     Table,
 )
 
-from utils import clean_903_table
+from utils import clean_903_table, group_calculation, time_difference
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 # Session variables
 filepath = "/workspaces/ERN-sessions/intermediate_cohort1_thursday/data/903_database.db"
@@ -43,4 +44,26 @@ for table in table_names:
 for key, df in dfs.items():
     dfs[key] = clean_903_table(df, collection_end)
 
-print(dfs['header'])
+
+# Uncomment to check data cleaning
+# print(dfs['header'])
+
+# dict to store measure outputs
+measures = {}
+
+measures["Header by ethnicity"] = group_calculation(
+    dfs["header"], "ETHNICITY", "Header - Ethncities"
+)
+
+measures["Header by age"] = group_calculation(
+    dfs["header"], "AGE_BUCKETS", "Header - Age"
+)
+
+# dfs['missing']['MISSING_DURATION'] = dfs['missing'].apply(
+#     lambda x: relativedelta(x['MIS_END_dt'], x['MIS_START_dt']).normalized().days, axis=1
+# )
+
+dfs["missing"]["MISSING_DURATION"] = time_difference(
+    dfs["missing"]["MIS_START_dt"], dfs["missing"]["MIS_END_dt"], business_days=True
+)
+print(dfs["missing"])

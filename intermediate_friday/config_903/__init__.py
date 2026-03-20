@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class DateCols903(Enum):
     cols = [
         "DOB",
@@ -15,7 +16,8 @@ class DateCols903(Enum):
         "DATE_PERM",
         "REVIEW",
         "DUC",
-    ]    
+    ]
+
 
 class EthnicSubcategories(Enum):
     WBRI = "White"

@@ -8,7 +8,14 @@ from sqlalchemy import (
     Table,
 )
 
-from utils import clean_903_table, group_calculation, time_difference
+from utils import (
+    clean_903_table,
+    group_calculation,
+    time_difference,
+    multiples_same_event,
+    group_calculation_year,
+    appears_on_both,
+)
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
@@ -68,4 +75,21 @@ dfs["missing"]["MISSING_DURATION"] = time_difference(
     dfs["missing"]["MIS_START_dt"], dfs["missing"]["MIS_END_dt"], business_days=True
 )
 
-print(dfs["missing"])
+measures_dict["Multiple episodes"] = multiples_same_event(
+    dfs["episodes"], event_name="Number of episodes"
+)
+
+dfs["episodes"]["DECOM_YEAR"] = dfs["episodes"]["DECOM_dt"].dt.year
+
+measures_dict["Eisodes starting per year"] = group_calculation(
+    dfs["episodes"], "DECOM_YEAR", "Episodes starting per year"
+)
+
+measures_dict["Placements by year"] = group_calculation_year(
+    dfs["episodes"], "DECOM_YEAR", "PLACE", "Placments by year"
+)
+
+output = appears_on_both(
+    dfs["episodes"], dfs["missing"], "CYP with episodes who have been missing"
+)
+print(output)

@@ -1,0 +1,2 @@
+openpyxl
+plotly == 5.5.0

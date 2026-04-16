@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>stlite app</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.css"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.js"></script>
-    <script>
-stlite.mount(
-  {
-    requirements: ["plotly", "openpyxl"], // Packages to install
-    entrypoint: "app.py", // The target file of the `streamlit run` command
-    files: {
-        "app.py": `
 # We need to install sf nova from the Extensions
 # We are going to make an app that takes the processing we did for the 903
 # but allows users without Python to access it.
@@ -119,6 +94,7 @@ def calculate_age_buckets(age):
         return "e) 16 years and over"
     else:
         return "f) Age error"
+
 
 @st.cache_data
 def clean_903_table(df: pd.DataFrame, collection_end: pd.Timestamp):
@@ -295,28 +271,32 @@ if upload:
 
     measures["ad1 by age"] = group_calculation(dfs["ad1"], "AGE_BUCKETS", "Ad1 - Age")
 
-    output_table = pd.concat(
-            list(measures.values())
-    )
+    output_table = pd.concat(list(measures.values()))
 
-    output_table[["List", "Measure"]] = output_table["Measure"].str.split(" - ", expand=True, n=1)
+    output_table[["List", "Measure"]] = output_table["Measure"].str.split(
+        " - ", expand=True, n=1
+    )
 
     output_table = output_table[["List", "Measure", "Value", "Count", "Percentage"]]
 
     with st.expander("Measures download"):
         output_csv = output_table.to_csv(index=False)
-        st.download_button("Doanload procssed 903", output_csv, file_name="Processed 903.csv")
+        st.download_button(
+            "Doanload procssed 903", output_csv, file_name="Processed 903.csv"
+        )
         st.table(output_table)
 
     with st.expander("Unsliced plots"):
-        plot_table = output_table[(output_table["List"] == "Header") & (output_table["Measure"] == "Age")]
+        plot_table = output_table[
+            (output_table["List"] == "Header") & (output_table["Measure"] == "Age")
+        ]
 
         header_age_bar = px.bar(
             plot_table,
             x="Value",
             y="Count",
             title="Header by age",
-            labels={"Count":"Number of children"}
+            labels={"Count": "Number of children"},
         )
 
         st.plotly_chart(header_age_bar)
@@ -325,34 +305,27 @@ if upload:
         st.write("Make slices here")
 
         list_selected = st.sidebar.radio(
-            "Select list:",
-            options=output_table["List"].unique()
+            "Select list:", options=output_table["List"].unique()
         )
 
         measure_options = output_table["Measure"][
             output_table["List"] == list_selected
-            ].unique()
+        ].unique()
 
         measure_selected = st.sidebar.radio("Select measure:", measure_options)
 
     with st.expander("Sliceable plots"):
-        plot_table = output_table[(output_table["List"] == list_selected) 
-                                  & (output_table["Measure"] == measure_selected)]
-        
+        plot_table = output_table[
+            (output_table["List"] == list_selected)
+            & (output_table["Measure"] == measure_selected)
+        ]
+
         bar = px.bar(
             plot_table,
             x="Value",
             y="Count",
             title=f"{list_selected} by {measure_selected}",
-            labels={"Count":"Number of children", "Value":measure_selected}
+            labels={"Count": "Number of children", "Value": measure_selected},
         )
 
         st.plotly_chart(bar, use_container_width=True)
-`,
-    },
-  },
-  document.getElementById("root")
-);
-    </script>
-  </body>
-</html>

@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>stlite app</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.css"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.js"></script>
-    <script>
-stlite.mount(
-  {
-    requirements: ["plotly", "openpyxl"], // Packages to install
-    entrypoint: "app.py", // The target file of the `streamlit run` command
-    files: {
-        "app.py": `
 # We need to install sf nova from the Extensions
 # We are going to make an app that takes the processing we did for the 903
 # but allows users without Python to access it.
@@ -347,12 +322,3 @@ if upload:
         )
 
         st.plotly_chart(bar, use_container_width=True)
-
-`,
-    },
-  },
-  document.getElementById("root")
-);
-    </script>
-  </body>
-</html>
